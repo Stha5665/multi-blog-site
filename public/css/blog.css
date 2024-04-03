@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+}
+nav ul li{
+    margin: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #ed7a07;
+}
+
+.logo{
+    width: 150px;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(9,0,77,0.65), rgba(9,0,77,0.65)), url(../public/image/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+/* Dropdown Button */
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a381c2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    text-align: center;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.content{
+    margin-top: 14%;
+    color: #fff;
+    max-width: 620px;
+}
+
+.content h1{
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    line-height: 85px;
+}
+
+.blogs{
+    padding: 50px 12%;
+    font-size: 22px;
+    /* text-align: center; */
+}
+
+.blogs h1{
+    text-align: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.text-col a{
+    text-decoration: none;
+    color: #fff;
+}
+.text-col a:hover{
+    color: #ed7a07;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    height: 250px;
+    width: 90%;
+    margin: auto;
+}
+
+/* for blog page */
+.row-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon ul li{
+    list-style: none;
+}
+.icon ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+
+}
+ul li a img{
+    filter: invert(1);
+
+    
+}
+.row .title{
+    width: 100%;
+
+}
+.row h3{
+    font-family: monospace;
+    text-align: center;
+    padding-left: 150px;
+    margin-bottom: 12px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.row .img{
+    padding: 12px 12%;
+    margin-bottom: 50px;
+}
+.row img{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.row .text{
+    width: 100%;
+    padding: 12px 20px;
+}
+.row .text p{
+    font-family: monospace ;
+    line-height: 32px;
+}
+
+/* footer */
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 100%;
+    }
+}
